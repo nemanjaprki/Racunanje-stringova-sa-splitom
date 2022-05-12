@@ -1,0 +1,38 @@
+<!DOCTYPE html>  
+<html>
+<head>  
+  <meta charset="UTF-8">
+</head>  
+<body> 
+ 
+     <div id="konzola"></div> 
+
+     <script> 
+      var unos = "12*33"; 
+      var rezultat; 
+      var delovi; 
+       
+      if(unos.indexOf("+") != -1) { 
+          delovi = unos.split("+"); 
+          rezultat = parseInt(delovi[0]) + parseInt(delovi[1]);
+      } 
+      if(unos.indexOf("-") != -1) { 
+          delovi = unos.split("-"); 
+          rezultat = parseInt(delovi[0]) - parseInt(delovi[1]);
+      } 
+      if (unos.indexOf("*") != -1) { 
+          delovi = unos.split("*"); 
+          rezultat = parseInt(delovi[0]) * parseInt(delovi[1]);
+      }
+         
+     document.getElementById("konzola").innerHTML = rezultat;
+      
+     </script>
+
+
+
+
+
+</body>
+ 
+</html>
